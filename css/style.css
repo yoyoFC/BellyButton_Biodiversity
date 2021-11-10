@@ -1,0 +1,40 @@
+body {
+  color: #dfe7eb;   
+}
+
+.jumbotron {
+    background-image: url("../images/research_bk.png");
+    background-size: 100% 100%;
+    text-align: center;
+  }
+
+nav {
+  float:center;
+}
+
+nav ul{
+  margin :0;
+  padding: 0;
+  list-style:none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 25px;
+}
+
+nav a{
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.col-md-5 {
+  border-radius: 15px 0 0 15px;
+}
+
+#bar {
+  background-color: rgb(207, 211, 212)
+}

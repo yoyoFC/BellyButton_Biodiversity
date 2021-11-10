@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bubble chart</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <nav class="nav">
+              <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "bubble.html">Bubble Chart</a></li>
+                <li><a href = "bar.html">Bargraph</a></li>
+                <li><a href = "gauge.html">Gauge</a></li>
+              </ul>
+            </nav>
+        </div> 
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1 style="color:black;">Belly Button Biodiversity Dashboard</h1>
+        <p style="color:black;">Bubble chart</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+          <p style="color:black;">
+            This website was designed to collaborate with a Biological research driven by the company Improbable beef.The main goal is analyze and compare the bacterias to syntethize proteins that taste like beef. In this hipothesis, we will analyze the bacterias found in the human body specifically inside of the belly button. Different people can harves different bacteries species, the website will provide detailed information from multiple test/participand. Each person can be identified under an ID, and each sample will provide info about the amount of bacterias found with their respective names. 
+          </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5 style="color:black;">Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select style="color:black;" id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div style="color:darkblue;" id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+
+      <div class="col-md-10">
+          <div id="bubble"></div>
+      </div>
+    </div>
+  
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="charts_bubble.js"></script>
+
+</body>
+
+</html>
